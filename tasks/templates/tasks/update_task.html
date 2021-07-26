@@ -2,6 +2,9 @@
     Update Task
 </h1>
 
-<form action="">
+<form method="POST" action="">
+    {% csrf_token %}
+
+    {{ form }}
     <input type="submit" value="Update Task">
 </form>
